@@ -4,7 +4,23 @@
 .navbar-brand{ 
     font-family: 'Yeseva One';
     /* color: black; */
-    /* font-size: 3rem;*/
+    font-size: 1.75rem;
+}
+
+.white-text {
+    color: white;
+}
+
+.brown-text {
+    color: rgb(63, 33, 12);
+}
+.d-md-inline {
+    color: white;
+
+}
+
+.brand-image {
+    width: 40%;
 }
 
 /* .navbar-dark .navbar-brand{
