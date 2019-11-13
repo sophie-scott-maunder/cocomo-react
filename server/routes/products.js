@@ -9,7 +9,7 @@ router.get('/', (request, response) => {
 })
 
 router.get('/product', (request, response) => {
-    // db.getData(request.body)
+    db.getData(request.body)
     // console.log(request.body)
     response.send("hi")
 })

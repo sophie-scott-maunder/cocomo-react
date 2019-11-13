@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 import {
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
@@ -31,21 +32,21 @@ class NavbarPage extends Component {
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu className="dropdown-default" right>
                                     <MDBDropdownItem href="#!"></MDBDropdownItem>
-                                    <MDBDropdownItem href="#!">Chocolate Salami</MDBDropdownItem>
-                                    <MDBDropdownItem href="#!">Wedding Favours</MDBDropdownItem>
-                                    <MDBDropdownItem href="#!">Chocolate Coated Grapefruit Peel</MDBDropdownItem>
+                                    <MDBDropdownItem><Link to="/products/1">Chocolate Salami</Link></MDBDropdownItem>
+                                    <MDBDropdownItem><Link to="/products/2">Chocolate Coated Grapefruit Peel</Link></MDBDropdownItem>
+                                    <MDBDropdownItem><Link to="/products/3">Wedding Favours</Link></MDBDropdownItem>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavItem>
                     </MDBNavbarNav>
                     <MDBNavbarNav center="true" className="nav-center">
-                        <MDBNavItem>
+                        <MDBNavItem><Link to="/">
                             <img src="/images/cocomo-brand.png" className="brand-image" alt="cocomo" />
-                        </MDBNavItem>
+                            </Link></MDBNavItem>
                     </MDBNavbarNav>
                     <MDBNavbarNav right>
                         <MDBNavItem>
-                            <MDBNavLink to="#!">Contact Us</MDBNavLink>
+                            <MDBNavLink to='/contact'>Contact Us</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
                             <MDBDropdown>
