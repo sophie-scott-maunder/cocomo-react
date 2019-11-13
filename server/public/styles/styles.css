@@ -22,6 +22,18 @@
 .brand-image {
     width: 40%;
 }
+.nav-center {
+    text-align: center;
+}
+
+.d-block {
+    margin: 30px;
+}
+
+.h3-responsive {
+    text-shadow: rgba(76, 69, 69, 0.83) 4px 0 10px;
+    
+}
 
 /* .navbar-dark .navbar-brand{
     color: black;

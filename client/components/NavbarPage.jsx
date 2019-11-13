@@ -38,7 +38,7 @@ class NavbarPage extends Component {
                             </MDBDropdown>
                         </MDBNavItem>
                     </MDBNavbarNav>
-                    <MDBNavbarNav center="true">
+                    <MDBNavbarNav center="true" className="nav-center">
                         <MDBNavItem>
                             <img src="/images/cocomo-brand.png" className="brand-image" alt="cocomo" />
                         </MDBNavItem>
