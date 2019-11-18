@@ -5,6 +5,9 @@
     font-family: 'Yeseva One';
     font-size: 1.75rem;
 }
+a {
+    color: black;
+}
 
 .white-text {
     color: white;
@@ -31,6 +34,10 @@
 .h3-responsive {
     text-shadow: rgba(76, 69, 69, 0.83) 4px 0 10px;
     
+}
+
+.row{
+    justify-content: center;
 }
 
 

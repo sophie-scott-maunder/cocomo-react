@@ -11,6 +11,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 import HomePage from './Home'
 import Nav from './NavbarPage'
 import ProductPage from './ProductPage'
+// import Form from './Form'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path='/' component={Nav} />
           <Route exact path='/' component={HomePage} /> 
           <Route exact path='/products/:id' component={ProductPage} />
+          {/* <Route exact path='/products/:id' component={Form}/> */}
         </React.Fragment>
       </Router>
     </div>
