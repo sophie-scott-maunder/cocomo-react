@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
     "mdbreact";
@@ -15,12 +16,12 @@ const CarouselPage = () => {
             >
                 <MDBCarouselInner>
                     <MDBCarouselItem itemId="1">
-                        <MDBView>
+                        <MDBView><Link to="/products/1">
                             <img
                                 className="d-block w-100"
                                 src="/images/img-1.jpeg"
                                 alt="Christmas Chocolate Salami"
-                            />
+                            /></Link>
                             <MDBMask overlay="black-strong" />
                         </MDBView>
                         <MDBCarouselCaption>
@@ -29,12 +30,12 @@ const CarouselPage = () => {
                         </MDBCarouselCaption>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="2">
-                        <MDBView>
+                        <MDBView><Link to="/products/2">
                             <img
                                 className="d-block w-100"
                                 src="/images/img-2.jpeg"
                                 alt="Second slide"
-                            />
+                            /></Link>
                             <MDBMask overlay="black-strong" />
                         </MDBView>
                         <MDBCarouselCaption>
@@ -43,12 +44,12 @@ const CarouselPage = () => {
                         </MDBCarouselCaption>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="3">
-                        <MDBView>
+                        <MDBView><Link to="/products/3">
                             <img
                                 className="d-block w-100"
                                 src="/images/img-3.jpeg"
                                 alt="Third slide"
-                            />
+                            /></Link>
                             <MDBMask overlay="black-slight" />
                         </MDBView>
                         <MDBCarouselCaption>

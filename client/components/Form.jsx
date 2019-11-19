@@ -6,46 +6,47 @@ const FormPage = () => {
     <MDBContainer>
       <MDBRow>
         <MDBCol md="4">
-          <form>
+        <form className="contact-form" method="POST" action="/contact">
             <p className="h4 text-center mb-4">Order</p>
-            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+            <label htmlFor="name" className="grey-text">
               Your name
             </label>
             <input
               type="text"
+              name="name"
               id="defaultFormContactNameEx"
               className="form-control"
             />
             <br />
-            <label htmlFor="defaultFormContactEmailEx" className="grey-text">
+            <label htmlFor="email" className="grey-text">
               Your email
             </label>
             <input
               type="email"
+              name="email"
               id="defaultFormContactEmailEx"
               className="form-control"
             />
             <br />
             <label
-              htmlFor="defaultFormContactSubjectEx"
-              className="grey-text"
-            >
+              htmlFor="quantity" className="grey-text">
               Quantity
             </label>
             <input
               type="text"
+              name="quantity"
               id="defaultFormContactQuantity"
               className="form-control"
             />
             <br />
             <label
-              htmlFor="defaultFormContactMessageEx"
-              className="grey-text"
-            >
+              htmlFor="deliveryAdress"
+              className="grey-text">
               Delivery Address
             </label>
             <textarea
               type="text"
+              name="deliveryAddress"
               id="defaultFormContactDeliveryAddress"
               className="form-control"
               rows="3"
@@ -55,6 +56,17 @@ const FormPage = () => {
                 Send
                 <MDBIcon far icon="paper-plane" className="ml-2" />
               </MDBBtn>
+            </div>
+            <div>
+                { window.location.hasdh === '#success' &&
+            <div id="success">
+                <p>Your order has been sent! We will be in touch within two working days.</p>
+                </div>
+            }
+            { window.location.hash === '#error' &&
+        <div id="error">
+            <p>An error occured while submitting your order. Please contact us on help@cocomo.com</p>
+            </div>}
             </div>
           </form>
         </MDBCol>

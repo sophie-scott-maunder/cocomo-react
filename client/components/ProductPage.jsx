@@ -1,6 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom'
 import { getProducts } from '../api/products'
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact"
 import FormPage from './Form'
 
 
@@ -38,21 +39,28 @@ class ProductPage extends React.Component {
             return p.id == this.props.match.params.id
         })
         return (
-            <body>
-            <section>
-                <div>
 
-                    <h1> {product && product.name}</h1>
-                    <FormPage/>
-                    </div>
-                    </section>
-                    </body>
-        )}
-        
+            <MDBContainer>
+                <MDBRow>
+                    <MDBCol md="5">.col-md-3</MDBCol>
+                    <MDBCol md="5">
+                        <h2>{product && product.name}</h2>
+                        <h5>${product && product.price}</h5>
+                        <p>
+                            {product && product.description}
+                        </p>
+                        <p>
+                            {product && product.ingredients}
+                        </p>
+                    </MDBCol>
+                </MDBRow>
+                <FormPage />
+            </MDBContainer>
+
+        )
+    }
+
 }
-// const ProductPage = () => {
-//     return <h1>HEY</h1>
 
-// }
 
 export default ProductPage
