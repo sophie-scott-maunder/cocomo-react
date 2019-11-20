@@ -7,3 +7,4 @@ export function getProducts () {
         return products
     })
 }
+

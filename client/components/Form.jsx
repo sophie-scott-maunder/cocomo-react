@@ -1,5 +1,7 @@
 import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon } from 'mdbreact';
+import { sendOrder } from "../api/orders";
+
 
 class FormPage extends React.Component {
     constructor() {
@@ -13,6 +15,8 @@ class FormPage extends React.Component {
 
         }
         this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+
     }
 
     handleChange = e => {
@@ -20,10 +24,15 @@ class FormPage extends React.Component {
     }
 
     handleSubmit(e) {
+        // alert('order!')
         e.preventDefault()
 
-        const { name, email, quantity, deliveryAddress } = this.state
+
+        sendOrder(this.state)
+        // const { name, email, quantity, deliveryAddress } = this.state
+       
     }
+
 
     render() {
         return (
@@ -80,13 +89,13 @@ class FormPage extends React.Component {
                                 rows="3"
                             />
                             <div className="text-center mt-4">
-                                <MDBBtn color="warning" outline type="submit">
+                                <MDBBtn color="warning" outline type="submit" value="Submit">
                                     Send
                 <MDBIcon far icon="paper-plane" className="ml-2" />
                                 </MDBBtn>
                             </div>
                             <div>
-                                {window.location.hasdh === '#success' &&
+                                {window.location.hash === '#success' &&
                                     <div id="success">
                                         <p>Your order has been sent! We will be in touch within two working days.</p>
                                     </div>

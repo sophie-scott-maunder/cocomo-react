@@ -26,7 +26,7 @@ const CarouselPage = () => {
                         </MDBView>
                         <MDBCarouselCaption>
                             <h3 className="h3-responsive">Christmas Chocolate Salami</h3>
-                            <p>First text</p>
+                            
                         </MDBCarouselCaption>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="2">
@@ -39,8 +39,8 @@ const CarouselPage = () => {
                             <MDBMask overlay="black-strong" />
                         </MDBView>
                         <MDBCarouselCaption>
-                            <h3 className="h3-responsive">Strong mask</h3>
-                            <p>Second text</p>
+                            <h3 className="h3-responsive">Chocolate Coated Grapefruit Peel</h3>
+                            
                         </MDBCarouselCaption>
                     </MDBCarouselItem>
                     <MDBCarouselItem itemId="3">
@@ -53,8 +53,8 @@ const CarouselPage = () => {
                             <MDBMask overlay="black-slight" />
                         </MDBView>
                         <MDBCarouselCaption>
-                            <h3 className="h3-responsive">Slight Mast</h3>
-                            <p>Third text</p>
+                            <h3 className="h3-responsive">Wedding Favours</h3>
+                            
                         </MDBCarouselCaption>
                     </MDBCarouselItem>
                 </MDBCarouselInner>
