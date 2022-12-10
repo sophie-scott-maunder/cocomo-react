@@ -43,7 +43,7 @@
     "dotenv": "^8.2.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "jest": "^24.7.1",
     "knex": "^0.20.1",
     "mdbreact": "^4.22.0",
